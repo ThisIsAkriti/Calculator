@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    
+  </head>
+  <body>
+    <div class="calculator-block">
+      <div class="cal-heading">
+      Calculator :-) 
+      </div>
+    
+      <p>
+        <button 
+        class="num";
+        onclick="
+        calculationUpdate(1)">1</button>
+        <button 
+        class="num";
+        onclick="
+        calculationUpdate(2)">2</button>
+        <button 
+        class="num";
+        onclick="
+        calculationUpdate(3)">3</button>
+        <button onclick="
+        calculationUpdate('+')"
+        class="sign";>+</button>
+      </p>
+      <p>
+        <button  onclick="
+        calculationUpdate(4)"
+        class="num";>4</button>
+        <button onclick="
+        calculationUpdate(5)"
+        class="num";>5</button>
+        <button onclick="
+        calculationUpdate(6)";
+        class="num";>6</button>
+        <button onclick="
+        calculationUpdate('-')";
+        class="sign";>-</button>
+      </p>
+      <p>
+        <button  onclick="
+        calculationUpdate(7)"
+        class="num";>7</button>
+        <button onclick="
+        calculationUpdate(8)"
+        class="num";>8</button>
+        <button onclick="
+        calculationUpdate(9)"
+        class="num";>9</button>
+        <button onclick="
+        calculationUpdate('*')"
+        class="sign";>*</button>
+      </p>
+      <p>
+        <button onclick="
+        calculationUpdate(0)"
+        class="num";>0</button>
+        <button onclick="
+        calculationUpdate('.')"
+        class="num"; 
+        style="padding: 20px 28px;"> . </button>
+        <button onclick="
+        calculation = eval(calculation);
+        finalCalculation();  // display on page.
+        localStorage.setItem('calculation',calculation);
+        "
+        class="num"; style="background-color:  rgb(248, 119, 13);">=</button>
+        
+        <button onclick="
+        calculationUpdate('/')"
+        class="sign";>/</button>
+      </p>
+
+      <button onclick="
+      calculation = '';
+      finalCalculation();
+      localStorage.setItem('calculation', calculation) "
+      class="clear-button";>Clear
+      </button>
+    
+
+      <p class="js-total total"></p>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html> 

@@ -1,0 +1,84 @@
+
+body{
+  background-color: rgb(17, 17, 17);
+  font-family: cursive;
+  
+ 
+}
+.total{
+    color:white;
+    font-size: 24px;
+    margin-left:4px;
+}
+
+.cal-heading{
+  font-weight: bold;
+  font-size: 30px;
+  color:whitesmoke;
+  text-align: center;
+
+}
+.num{
+  font-size: 24px;
+  padding:20px 24px;
+  border-radius: 18px;
+  background-color: rgb(80, 77, 77);
+  color:white;
+  border:none;
+  margin-left:4px;
+}
+.clear-button{
+  padding:20px 8px;
+  border-radius: 50%;
+  background-color: rgb(248, 119, 13);
+  color:white;
+  
+  border:none;
+  margin-left: 4px;
+  font-size: 24px;
+}
+.sign{
+  padding:20px 24px;
+  border-radius: 20px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: rgb(26, 23, 23);
+  color: white;
+  border:1px solid rgb(34, 33, 33);
+  margin-left:4px;
+}
+.calculator-block{
+ 
+  position:relative;
+  
+
+
+  border:1px solid gray;
+  width:fit-content;
+  padding:20px;
+  border-radius: 24px;
+  left:40%;
+  background: linear-gradient(45deg, rgb(39, 38, 38), rgb(44, 38, 38));
+
+}
+@media(max-width:1000px){
+  .calculator-block{
+    left:25%;
+  }
+}
+
+.num,
+.sign{
+    box-shadow: 1px 3px 5px rgba(131, 122, 122, 0.3);
+}
+.num:hover,
+.sign:hover{
+    box-shadow: none;
+    
+}
+.num:active,
+.sign:active{
+    border-radius:14px ;
+    transition-duration: 0.8;
+    
+}
